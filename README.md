@@ -1,9 +1,8 @@
 # Snapshot Site TypeScript SDK
 
 [![npm](https://img.shields.io/npm/v/%40snapshot-site%2Fsdk.svg)](https://www.npmjs.com/package/@snapshot-site/sdk)
-[![npm downloads](https://img.shields.io/npm/dm/%40snapshot-site%2Fsdk.svg)](https://www.npmjs.com/package/@snapshot-site/sdk)
 [![Node](https://img.shields.io/badge/node-%3E%3D20.9.0-339933.svg)](https://nodejs.org/)
-[![License](https://img.shields.io/npm/l/%40snapshot-site%2Fsdk.svg)](https://www.npmjs.com/package/@snapshot-site/sdk)
+[![License](https://img.shields.io/github/license/snapshot-site/snapshot-site-typescript-sdk.svg?cacheSeconds=300)](https://github.com/snapshot-site/snapshot-site-typescript-sdk/blob/main/LICENSE)
 [![CI](https://github.com/snapshot-site/snapshot-site-typescript-sdk/actions/workflows/tests.yml/badge.svg)](https://github.com/snapshot-site/snapshot-site-typescript-sdk/actions/workflows/tests.yml)
 
 Official TypeScript SDK for the Snapshot Site API.
@@ -13,6 +12,10 @@ Official TypeScript SDK for the Snapshot Site API.
 ```bash
 pnpm add @snapshot-site/sdk
 ```
+
+Create your API token in Snapshot Site Console:
+
+- https://console.snapshot-site.com
 
 ## Usage
 
@@ -107,10 +110,3 @@ console.log(diff.summary?.mismatchPercentage);
 - `client.screenshot(payload)`
 - `client.analyze(payload)`
 - `client.compare(payload)`
-
-## Publish
-
-```bash
-pnpm run prepublishOnly
-npm publish --access public
-```
