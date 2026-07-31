@@ -13,11 +13,30 @@ Official TypeScript SDK for the Snapshot Site API.
 pnpm add @snapshot-site/sdk
 ```
 
-Create your API token in Snapshot Site Console:
+## Credentials
 
-- https://console.snapshot-site.com
+You need a Snapshot Site API key to use this SDK.
+
+1. Sign up for a [Snapshot Site Console](https://console.snapshot-site.com/) account.
+2. Create an API key on the [API Keys](https://console.snapshot-site.com/api-keys) page.
+
+   ![Snapshot Site Console — API Keys](assets/console-apikeys.png)
+3. Pass it to the client as `apiKey`, reading it from `SNAPSHOT_SITE_API_KEY` rather than
+   hardcoding it.
+4. Leave `baseUrl` unset unless you're pointed at a self-hosted or staging instance; it
+   defaults to `https://api.prod.ss.snapshot-site.com`.
+
+## Compatibility
+
+Requires Node.js 20.9 or later. Ships as CommonJS with bundled type declarations.
 
 ## Usage
+
+Not sure which options to use? Preview a capture and its parameters in the
+[Screenshot](https://console.snapshot-site.com/screenshot) console playground before wiring
+them into code.
+
+![Snapshot Site Console — Screenshot playground](assets/console-screenshot.png)
 
 ```ts
 import { SnapshotSiteClient } from "@snapshot-site/sdk";

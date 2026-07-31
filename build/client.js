@@ -14,7 +14,7 @@ class SnapshotSiteClient {
         }
         this.apiKey = options.apiKey;
         this.baseUrl = (options.baseUrl ?? DEFAULT_BASE_URL).replace(/\/+$/, "");
-        this.userAgent = options.userAgent ?? "@snapshot-site/sdk/0.1.0";
+        this.userAgent = options.userAgent ?? "@snapshot-site/sdk/0.1.1";
         this.fetchImpl = options.fetch ?? fetch;
     }
     screenshot(input) {
